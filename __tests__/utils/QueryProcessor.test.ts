@@ -27,6 +27,6 @@ describe("QueryProcessor", () => {
     test('should return player name response', () => {
         const query = "What is your name?";
         const response: string = QueryProcessor(query);
-        expect(response).toBe("My name is evelynnc.");
+        expect(response).toBe("evelynnc");
     });
 });
