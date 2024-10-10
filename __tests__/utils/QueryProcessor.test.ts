@@ -30,9 +30,15 @@ describe("QueryProcessor", () => {
         expect(response).toBe("evelynnc");
     });
 
-    test('should return the largest number', () => {
+    test('should return 79', () => {
         const query = "Which of the following numbers is the largest: 18, 38, 79?";
         const response: string = QueryProcessor(query);
         expect(response).toBe("79");
+    });
+
+    test('should return 33', () => {
+        const query = "Which of the following numbers is the largest: 33, 31, 27?";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe("33");
     });
 });
