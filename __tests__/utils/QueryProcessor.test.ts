@@ -47,4 +47,10 @@ describe("QueryProcessor", () => {
         const response: string = QueryProcessor(query);
         expect(response).toBe("1");
     });
+
+    test('should return 2883', () => {
+        const query = "What is 93 multiplied by 31?";
+        const response: string = QueryProcessor(query);
+        expect(response).toBe("2883");
+    });
 });
